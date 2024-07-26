@@ -10,24 +10,28 @@ This PHP module is a Basket for e-commerce that has the following interface:
 
 ## How do I use it?
 
-import AcmeBasket\Basket;
-import AcmeBasket\Catalog;
-import AcmeBasket\DeliveryRules;
-import AcmeBasket\Offer;
+import AcmeBasket\Basket;\
+import AcmeBasket\Catalog;\
+import AcmeBasket\DeliveryRules;\
+import AcmeBasket\Offer;\
 
-then
+then\
 $basket = new Basket(new Catalog(), new Offer(), new DeliveryRules());
 
-Add a product to the basket:
+Add a product to the basket:\
 $basket->add("R01");
 
-get the total:
+get the total:\
 $basket->total();
 
 see the index.php for an example.
 
 ## Assumptions made
 
-I went ahead and decided the order of operations: 1) Add item(s) to the basket 2) Determine if offer(s) apply 3) Calculate the delivery cost
+I went ahead and decided the order of operations:
+
+1. Add item(s) to the basket
+2. Determine if offer(s) apply
+3. Calculate the delivery cost
 
 Also, based on the given test data, I used a floor function for rounding down to the nearest cent.

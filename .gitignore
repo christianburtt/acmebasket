@@ -1,6 +1,6 @@
 /vendor/
 /node_modules/
-.pretterrc
+.prettierrc
 package.json
 package-lock.json
 .phpunit.result.cache
