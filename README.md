@@ -10,19 +10,34 @@ This PHP module is a Basket for e-commerce that has the following interface:
 
 ## How do I use it?
 
+first\
+
+```
+composer install
+```
+
+then, inside your php:\
+
+```
 import AcmeBasket\Basket;\
 import AcmeBasket\Catalog;\
 import AcmeBasket\DeliveryRules;\
 import AcmeBasket\Offer;\
 
-then\
 $basket = new Basket(new Catalog(), new Offer(), new DeliveryRules());
+```
 
 Add a product to the basket:\
+
+```
 $basket->add("R01");
+```
 
 get the total:\
+
+```
 $basket->total();
+```
 
 see the index.php for an example.
 
